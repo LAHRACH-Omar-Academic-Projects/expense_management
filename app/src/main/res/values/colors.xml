@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color. -->
+    <!-- colorPrimary -->
+    <color name="dark_purple">#2A1542</color>
+    <!-- colorPrimaryVariant -->
+    <color name="dark_purple_transparent">#DF2A1542</color>
+    <!-- colorOnPrimary -->
+    <color name="dark_orange">#FF5722</color>
+
+
+    <!-- Secondary brand color. -->
+    <!-- colorSecondary -->
+    <color name="dark_yellow">#FF9800</color>
+    <!-- colorSecondaryVariant -->
+    <color name="dark_yellow_transparent">#75FF9800</color>
+    <!-- colorOnSecondary -->
+    <color name="white">#81FFFFFF</color>
+
+
+    <!-- Color background. -->
+    <color name="black">#12091B</color>
+
+    <!-- Other Colors -->
+    <color name="green">#00FF62</color>
+    <color name="blue">#2196F3</color>
+    <color name="red">#FF1E1E</color>
+    <color name="purple">#FA84D2</color>
+    <color name="light">#FFF</color>
+</resources>

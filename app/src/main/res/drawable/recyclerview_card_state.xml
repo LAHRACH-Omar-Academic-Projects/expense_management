@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@android:integer/config_shortAnimTime"
+    android:exitFadeDuration="@android:integer/config_longAnimTime">
+    <item android:drawable="@drawable/recyclerview_card_enabled" android:state_enabled="true" android:state_pressed="false"  />
+    <item android:drawable="@drawable/recyclerview_card_clicked" android:state_hovered="true"  android:state_enabled="true"  />
+</selector>

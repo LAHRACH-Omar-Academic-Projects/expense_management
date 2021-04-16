@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:background="@drawable/spinner_state"
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="40dp"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        style="@android:style/Widget.Holo.Light.Spinner"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/checkbox_group"
+        android:orientation="horizontal"
+        android:background="@drawable/checkboxe_group_background"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/card"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card"/>
+        <CheckBox
+            android:id="@+id/cash"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cash"/>
+        <CheckBox
+            android:id="@+id/saving"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saving"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginVertical="20dp"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last ten recordings"
+                    android:textSize="20dp"
+                    android:layout_margin="30dp"
+                    android:textColor="@color/green"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listOfMovements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|end">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/newIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                app:tint="@color/green"
+                android:layout_gravity="end"
+                app:borderWidth="0dp"
+                android:backgroundTint="?attr/colorPrimaryVariant"
+                app:srcCompat="@drawable/ic_action_add"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/newExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:tint="@color/red"
+                    app:borderWidth="0dp"
+                    android:backgroundTint="?attr/colorPrimaryVariant"
+                    app:srcCompat="@drawable/ic_action_minus" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/newTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/fab_margin"
+                    app:tint="@color/blue"
+                    app:borderWidth="0dp"
+                    android:backgroundTint="?attr/colorPrimaryVariant"
+                    app:srcCompat="@drawable/ic_action_transfer" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
